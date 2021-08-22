@@ -8,15 +8,15 @@ import {Quote} from "../../models/quote";
 })
 export class QuoteComponent implements OnInit {
 
-  @Input() quote_details!: Quote ;
-upVote(){
-this.quote_details.up_vote = this.quote_details.up_vote+1;
-}
-downVote(){
-  this.quote_details.down_vote= this.quote_details.down_vote +1;
+  @Input() quote_details!: Quote;
+  details: boolean = false;
 
-}
-  constructor() { }
+  showDetails(){
+    this.details = true;
+  }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

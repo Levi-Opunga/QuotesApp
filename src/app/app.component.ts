@@ -30,8 +30,22 @@ export class AppComponent {
     }
 
   ];
-addNewQuote(quote: Quote){
-  this.quotes.push(quote);
-}
+  addedNewQuote: boolean = false;
 
+  addNewQuote(quote: Quote) {
+    this.quotes.push(quote);
+    this.addedNewQuote = false;
+  }
+  deleteQuote :boolean = false;
+
+  deletedQuote(quote:Quote){
+    this.quotes.push(quote);
+    this.deleteQuote = true
+  }
+
+
+
+  appear() {
+    this.addedNewQuote = true;
+  }
 }

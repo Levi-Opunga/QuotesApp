@@ -1,6 +1,6 @@
 <br>
-<span class="one"><button class="btn btn-primary">Add Quote</button></span>
+<span class="one"><button class="btn btn-primary" (click)="appear()">Add Quote</button></span>
 <br><br>
-<app-create-quote (newQuoteEvent)="addNewQuote($event)"></app-create-quote>
+<app-create-quote (newQuoteEvent)="addNewQuote($event)"   *ngIf="addedNewQuote"></app-create-quote>
 <br>
-<app-list-quote [quotes]="quotes"></app-list-quote>
+<app-list-quote [quotes]="quotes" (itIsDeleted)="deletedQuote($event)" *ngIf="deleteQuote"></app-list-quote>

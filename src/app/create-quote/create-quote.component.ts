@@ -13,10 +13,10 @@ export class CreateQuoteComponent implements OnInit {
 
 
   onCreate() {
-   // this.ap.quotes.push(this.quote);
     this.newQuoteEvent.emit(this.quote)
-  }
+    this.quote =new Quote();
 
+  }
   constructor() {
   }
 

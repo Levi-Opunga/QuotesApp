@@ -5,5 +5,5 @@
 <br><br>
 <app-create-quote (newQuoteEvent)="addNewQuote($event)"   *ngIf="addedNewQuote"></app-create-quote>
 <br>
-<app-list-quote [quotes]="quotes" (itIsDeleted)="deletedQuote($event)"></app-list-quote>
+<app-list-quote [quotes]="quotes" (itIsDeleted)="deletedQuote($event)" (upVoted)="upVoteQuote($event)" [maxVotedQuote]="maxVotedQuote"></app-list-quote>
 </body>

@@ -9,6 +9,7 @@ import { QuoteDetailsComponent } from './list-quote/quote/quote-details/quote-de
 import{FormsModule} from "@angular/forms";
 import { CustomDatePipe } from './pipes/custom-date.pipe';
 import { HeaderComponent } from './header/header.component';
+import { HighlightQuoteDirective } from './directives/highlight-quote.directive';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { HeaderComponent } from './header/header.component';
     QuoteDetailsComponent,
     CustomDatePipe,
     HeaderComponent,
+    HighlightQuoteDirective,
 
   ],
   imports: [

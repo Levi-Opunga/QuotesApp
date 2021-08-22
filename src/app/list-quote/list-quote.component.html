@@ -1,1 +1,1 @@
-<app-quote *ngFor="let quote of quotes" [quote_details]="quote" (itIsDeleted)="quoteDeleted($event)" ></app-quote>
+<app-quote *ngFor="let quote of quotes" [quote_details]="quote" (itIsDeleted)="quoteDeleted($event)"  (upVoted)="passedUp($event)" [maxVotedQuote]="maxVotedQuote"></app-quote>

@@ -7,15 +7,23 @@ import {Quote} from "../models/quote";
   styleUrls: ['./list-quote.component.css']
 })
 export class ListQuoteComponent implements OnInit {
- @Input() quotes!: any;
- @Output() itIsDeleted = new EventEmitter<Quote>();
+  @Input() quotes!: any;
+  @Input() maxVotedQuote!: Quote;
+  @Output() itIsDeleted = new EventEmitter<Quote>();
+  @Output() upVoted = new EventEmitter<Quote>();
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
 
-  quoteDeleted(quote:Quote){
+  passedUp(quote: Quote) {
+    this.upVoted.emit(quote)
+  }
+
+  quoteDeleted(quote: Quote) {
+
     this.itIsDeleted.emit(quote)
   }
 

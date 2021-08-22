@@ -9,6 +9,7 @@ import {Quote} from "../../../models/quote";
 export class QuoteDetailsComponent implements OnInit {
 
   @Output() itIsDeleted = new EventEmitter<Quote>();
+  @Output() upVoted = new EventEmitter<Quote>();
 
 
   @Input() quote_details!: Quote;
@@ -17,10 +18,8 @@ export class QuoteDetailsComponent implements OnInit {
     this.itIsDeleted.emit(this.quote_details)
   }
 
-
-
   upVote() {
-    this.quote_details.up_vote = this.quote_details.up_vote + 1;
+    this.upVoted.emit(this.quote_details)
   }
 
   downVote() {

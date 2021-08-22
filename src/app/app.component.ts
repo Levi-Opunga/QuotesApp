@@ -31,12 +31,23 @@ export class AppComponent {
 
   ];
   addedNewQuote: boolean = false;
+  maxVotedQuote!: Quote;
 
   addNewQuote(quote: Quote) {
     this.quotes.push(quote);
     this.addedNewQuote = false;
   }
 
+  upVoteQuote(quote: Quote) {
+    const index = this.quotes.indexOf(quote, 0);
+    if (index > -1) {
+      this.quotes[index].up_vote++;
+      this.maxVotedQuote = this.quotes.reduce(function(prev, current) {
+        return (prev.up_vote > current.up_vote) ? prev : current
+      })
+      console.log("maxvoted quote", this.maxVotedQuote.title)
+    }
+  }
 
   deletedQuote(quote: Quote) {
     const index = this.quotes.indexOf(quote, 0);
@@ -44,6 +55,8 @@ export class AppComponent {
       this.quotes.splice(index, 1);
     }
   }
+
+
 
 
   appear() {

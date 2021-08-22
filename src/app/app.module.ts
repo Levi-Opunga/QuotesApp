@@ -7,6 +7,8 @@ import { ListQuoteComponent } from './list-quote/list-quote.component';
 import { QuoteComponent } from './list-quote/quote/quote.component';
 import { QuoteDetailsComponent } from './list-quote/quote/quote-details/quote-details.component';
 import{FormsModule} from "@angular/forms";
+import { CustomDatePipe } from './pipes/custom-date.pipe';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import{FormsModule} from "@angular/forms";
     ListQuoteComponent,
     QuoteComponent,
     QuoteDetailsComponent,
+    CustomDatePipe,
+    HeaderComponent,
 
   ],
   imports: [

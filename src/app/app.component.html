@@ -1,6 +1,9 @@
+<app-header></app-header>
+<body>
 <br>
 <span class="one"><button class="btn btn-primary" (click)="appear()">Add Quote</button></span>
 <br><br>
 <app-create-quote (newQuoteEvent)="addNewQuote($event)"   *ngIf="addedNewQuote"></app-create-quote>
 <br>
-<app-list-quote [quotes]="quotes" (itIsDeleted)="deletedQuote($event)" *ngIf="deleteQuote"></app-list-quote>
+<app-list-quote [quotes]="quotes" (itIsDeleted)="deletedQuote($event)"></app-list-quote>
+</body>

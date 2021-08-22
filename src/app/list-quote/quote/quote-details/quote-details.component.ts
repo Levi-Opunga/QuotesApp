@@ -7,14 +7,15 @@ import {Quote} from "../../../models/quote";
   styleUrls: ['./quote-details.component.css']
 })
 export class QuoteDetailsComponent implements OnInit {
-  quote!: Quote;
+
   @Output() itIsDeleted = new EventEmitter<Quote>();
-  delete() {
-    this.quote = new Quote
-    this.itIsDeleted.emit(this.quote)
-  }
+
 
   @Input() quote_details!: Quote;
+
+  delete() {
+    this.itIsDeleted.emit(this.quote_details)
+  }
 
 
 

@@ -13,6 +13,8 @@ export class CreateQuoteComponent implements OnInit {
 
 
   onCreate() {
+    this.quote.created_at = Date.now()
+
     this.newQuoteEvent.emit(this.quote)
     this.quote =new Quote();
 

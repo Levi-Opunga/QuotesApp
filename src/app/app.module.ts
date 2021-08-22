@@ -6,7 +6,7 @@ import { CreateQuoteComponent } from './create-quote/create-quote.component';
 import { ListQuoteComponent } from './list-quote/list-quote.component';
 import { QuoteComponent } from './list-quote/quote/quote.component';
 import { QuoteDetailsComponent } from './list-quote/quote/quote-details/quote-details.component';
-
+import{FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { QuoteDetailsComponent } from './list-quote/quote/quote-details/quote-de
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,23 @@
-<p>create-quote works!</p>
+<p >{{quote| json}}</p>
+<div class="col-md-12 ">
+<form>
+  <div class="form-group">
+    <label for="name">Your Name</label>
+    <input type="text" class="form-control" id="name" placeholder="write your name" name="name" required [(ngModel)]="quote.created_by">
+  </div>
+  <div class="form-group">
+    <label for="title">Title of your quote</label>
+    <input type="text" class="form-control" id="title" placeholder="write quote title" required name="title" [(ngModel)]="quote.title">
+  </div>
+  <div class="form-group">
+    <label for="author">Author of Quote</label>
+    <input type="text" class="form-control" id="author" placeholder="quote author" required name="author" [(ngModel)]="quote.author">
+  </div>
+
+  <div class="form-group">
+    <label for="quote">Your Quote</label>
+    <textarea class="form-control" id="quote" rows="6" cols="48" name="quote" required [(ngModel)]="quote.quote"></textarea>
+  </div>
+  <button type="button" class="btn btn-primary" (click)="onCreate()">Submit Your Quote</button>
+</form>
+</div>

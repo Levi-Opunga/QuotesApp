@@ -1,5 +1,6 @@
-<div class="row" >
-  <div class="column-12">
+<div class="container">
+<div class="row " >
+  <div class="col-md-12">
     <div class="card">
       <div class="card-content">
 
@@ -11,9 +12,11 @@
         <span> Submitted by:</span><span> {{quote_details.created_by}}</span><br>
         <span>Submitted at:</span><span> {{quote_details.created_at}}</span>
         <br>
-        <button class="btn-btn ">up vote</button>
-        <button class="btn-btn"> down vote</button>
+        <span>{{quote_details.up_vote}}</span><button class="btn btn-primary" (click)="upVote()">up vote</button>
+        <span>{{quote_details.down_vote}}</span><button class="btn btn-primary" (click)="downVote()"> down vote</button>
       </div>
     </div>
   </div>
 </div>
+</div>
+<br>

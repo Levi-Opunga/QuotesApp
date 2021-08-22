@@ -15,8 +15,8 @@ export class AppComponent {
       created_by: 'levi',
       quote: 'all is well that ends well',
       created_at: '19/6/2007',
-      up_vote: 2,
-      down_vote: 3,
+      up_vote: 0,
+      down_vote: 0,
       title: 'wisdom'
     },
     {
@@ -24,12 +24,14 @@ export class AppComponent {
       created_by: "joe",
       quote: "never give up",
       created_at: '34/5/2668',
-      up_vote: 5,
-      down_vote: 3,
+      up_vote: 0,
+      down_vote: 0,
       title: 'encourage'
     }
 
   ];
-
+addNewQuote(quote: Quote){
+  this.quotes.push(quote);
+}
 
 }

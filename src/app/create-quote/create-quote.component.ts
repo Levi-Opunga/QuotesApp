@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Output,EventEmitter} from '@angular/core';
+import {Quote} from "../models/quote";
 
 @Component({
   selector: 'app-create-quote',
@@ -6,8 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-quote.component.css']
 })
 export class CreateQuoteComponent implements OnInit {
+  quote: Quote= new Quote();
+  @Output() newQuoteEvent = new EventEmitter<Quote>();
 
-  constructor() { }
+
+
+  onCreate() {
+   // this.ap.quotes.push(this.quote);
+    this.newQuoteEvent.emit(this.quote)
+  }
+
+  constructor() {
+  }
 
   ngOnInit(): void {
   }

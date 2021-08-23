@@ -1,6 +1,8 @@
 # Quotetaker
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.2.
+The application is a quote taking app that allows the user to view quotes,get further details for the quotes where it allows a user to upvote or down-vote a quote and highlights the quote with the quote with the must upvotes with a different color.
+The application also allows the user to add their own quotes and delete quotes.
 
 ## Development server
 
@@ -25,3 +27,12 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+### License
+
+> > MIT
+
+> > [Link](https://github.com/Levi-Opunga/AkanNamingAssistant/blob/master/License)
+
+Copyright (c 2021 \* ) Levi Tech Inc.

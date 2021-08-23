@@ -10,6 +10,7 @@ import{FormsModule} from "@angular/forms";
 import { CustomDatePipe } from './pipes/custom-date.pipe';
 import { HeaderComponent } from './header/header.component';
 import { HighlightQuoteDirective } from './directives/highlight-quote.directive';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { HighlightQuoteDirective } from './directives/highlight-quote.directive'
     CustomDatePipe,
     HeaderComponent,
     HighlightQuoteDirective,
+    FooterComponent,
 
   ],
   imports: [

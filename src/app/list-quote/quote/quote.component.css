@@ -1,5 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
 * {
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  font-family: 'Varela Round', sans-serif;
+}
+span{
+  font-family: 'Varela Round', sans-serif;
 }
 
 body {
@@ -14,7 +28,9 @@ body {
 }
 
 /* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+.row {
+  margin: 0 -5px;
+}
 
 /* Clear floats after the columns */
 .row:after {
@@ -28,11 +44,12 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: center;
-  /*background-color: #9CEC5B;*/
+  background-color: #9CEC5B;
 }
-button{
-  margin-left: 16px;
 
+button {
+  margin-left: 16px;
+  background-color: #DEDBD8;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */

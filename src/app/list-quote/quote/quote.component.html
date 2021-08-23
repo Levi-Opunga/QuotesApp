@@ -10,7 +10,7 @@
 
           <p> {{quote_details.quote}}</p>
 
-          <span><button *ngIf="!details" class="btn btn-primary" (click)="showDetails()">More Details</button></span>
+          <span><button *ngIf="!details" class="btn btn-btn" (click)="showDetails()">More Details</button></span>
           <app-quote-details *ngIf="details" [quote_details]="quote_details" (itIsDeleted)="quoteDeleted($event)" (upVoted)="passedUp()"></app-quote-details>
           <br>
           <div class="d-inline"><span> Submitted by:</span><span> {{quote_details.created_by}}       </span></div>

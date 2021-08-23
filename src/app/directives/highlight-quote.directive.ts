@@ -18,9 +18,9 @@ export class HighlightQuoteDirective {
   }
   highlight(){
     if(this.currentQuote==this.maxQuote){
-      this.el.nativeElement.style.backgroundColor = "yellow";
+      this.el.nativeElement.style.backgroundColor = "aliceblue";
     }else{
-      this.el.nativeElement.style.backgroundColor = "white";
+      this.el.nativeElement.style.backgroundColor = "#C3C49E";
     }
   }
 

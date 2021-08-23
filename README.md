@@ -33,6 +33,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 > > MIT
 
-> > [Link](https://github.com/Levi-Opunga/AkanNamingAssistant/blob/master/License)
+> > [Link](https://github.com/Levi-Opunga/QuotesApp/blob/master/License)
 
 Copyright (c 2021 \* ) Levi Tech Inc.
